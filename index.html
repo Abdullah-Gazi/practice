@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shape Area Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Shape Area Calculator</h1>
+
+    <div class="container">
+      <div class="shape-calculator">
+        <h2>Rectangle</h2>
+        <label for="rectangleLength">Length:</label>
+        <input type="number" id="rectangleLength" placeholder="Enter length" />
+        <label for="rectangleWidth">Width:</label>
+        <input type="number" id="rectangleWidth" placeholder="Enter width" />
+        <button onclick="calculateRectangleArea()">Calculate Area</button>
+        <p id="rectangleAreaResult"></p>
+      </div>
+
+      <div class="shape-calculator">
+        <h2>Triangle</h2>
+        <label for="triangleBase">Base:</label>
+        <input type="number" id="triangleBase" placeholder="Enter base" />
+        <label for="triangleHeight">Height:</label>
+        <input type="number" id="triangleHeight" placeholder="Enter height" />
+        <button onclick="calculateTriangleArea()">Calculate Area</button>
+        <p id="triangleAreaResult"></p>
+      </div>
+
+      <div class="shape-calculator">
+        <h2>Circle</h2>
+        <label for="circleRadius">Radius:</label>
+        <input type="number" id="circleRadius" placeholder="Enter radius" />
+        <button onclick="calculateCircleArea()">Calculate Area</button>
+        <p id="circleAreaResult"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

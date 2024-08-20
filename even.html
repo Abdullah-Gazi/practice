@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #tg2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="tg2">Hello</h2>
+    <p id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolor.
+    </p>
+    <button>Click me</button>
+    <script>
+      function change() {
+        console.log("Do you kow javascript");
+        document.body.style.backgroundColor='black';
+      }
+      var element = document.getElementById('tg2');
+      element.addEventListener('click',change);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="hello" title="I am JavaScript">Hello JavaScript</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam
+      delectus soluta cupiditate esse quam dolorem iure accusamus voluptatum
+      expedita.
+    </p>
+    <script>
+    var element = document.getElementById('hello');
+    element.innerHTML='JAVASCRIPT';
+    element.setAttribute('title','I am doing work for html');
+    var newh3 = document.createElement('h3');
+    newh3.innerHTML = 'Nishad';
+    element.appendChild(newh3);
+    </script>
+  </body>
+</html>

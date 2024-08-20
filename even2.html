@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="myList">My list</h1>
+        <ul>
+            <li class="list" id="first">list-0</li>
+            <li class="list">list-1</li>
+            <li class="list">list-2</li>
+            <li class="list">list-3</li>
+            <li class="list">list-4</li>
+        </ul>
+    </div>
+    <script>
+        var element = document.getElementsByClassName('list');
+        for (let i = 0; i < element.length; i++) {
+            var element = element[i];
+            element.addEventListener('click', function(event){
+                event.target.parentNode.removeChild(event.target);
+            })
+            
+        }
+    </script>
+</body>
+</html>

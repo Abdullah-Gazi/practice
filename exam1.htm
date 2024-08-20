@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKA/Z5jC45ICgFEA2q4b5IVbIKRbh6yG55pQ79q4q984y5+Q255Y14+j1Q6" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" name="email" placeholder="Email address" id="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" id="password" class="form-control">
+          </div>
+          <input type="submit" value="Login" class="btn btn-primary">
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Register</h2>
+        <form action="register.php" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Name" id="name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" name="email" placeholder="Email address" id="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" id="password" class="form-control">
+          </div>
+          <input type="submit" value="Register" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CSE236</td>
+          <td>Web Programming Sessional</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>CSE237</td>
+          <td>Database Systems</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2etnvHY7E7HqQ+Ph5UXvT/nP3MIgK9mLq6k/xQ7ICu6+1Yq4ex38gr2H4R" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy3+74yKfuB1FH00c/tR4Xh+9A+k7Yc3rQMX4+56z6bPv03c+6/q3H+K18x4/9" crossorigin="anonymous"></script>
+</body>
+</html>
